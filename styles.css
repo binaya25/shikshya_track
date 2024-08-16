@@ -1,0 +1,48 @@
+body{
+    background: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
+button {
+    background-color: rgb(234, 146, 120);
+    width:50px;
+    height: 30px;
+    border-radius: 25%;
+}
+
+.custom-radio {
+    height: 30px;
+    width: 170px;
+}
+
+
+textarea {
+    height:50px;
+    width:150px;
+}
+
+.income-color {
+    background-color:rgb(236, 145, 145);
+}
+
+.fee-col {
+    background-color: rgb(226, 239, 239);
+}
+
+.T {
+    width:100%;
+    height:100%;
+}
