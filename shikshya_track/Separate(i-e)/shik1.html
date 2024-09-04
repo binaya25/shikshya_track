@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shik.css">
+    <script src="shik.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.4/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.1/css/buttons.dataTables.css">
+
+
+
+</head>
+
+<body>
+    <label for="fileName" required="">Enter file name:</label>
+    <td><input type="text" id="fileName" placeholder="Enter file name" class="custom-radio"></td>
+    <br><br>
+    
+
+    <input type="radio" name="fileType" value="pdf" id="pdfRadio"> PDF
+    <input type="radio" name="fileType" value="xlsx" id="xlsxRadio"> XLSX
+    <input type="radio" name="fileType" value="docx" id="docx"> DOCX
+
+    <br><br>
+    <button class="btn" id="download">Submit</button>
+
+    <br><br><br>
+    <a href="shik.html">🔄</a>
+    
+
+    <form id="myForm">
+        <img src="shikshya transparent logo.png" alt="logo" class="header-logo">
+        <fieldset>
+            Date: <input type="date" name="fileType" class="date">
+
+                <!-- Table for expenses -->
+
+                <table border="1" cellpadding="10" id="E"  class="T">
+                    <hr>
+                    <tr class="income-color">
+                        <td><b>S.No.</b></td>
+                        <td><b>Amount</b></td>
+                        <td><b>Remarks</b></td>
+                    </tr>
+                    <tr>
+                        <h1>Expenses</h1>
+                        <td class="income-color"><b>Rent</b></td>
+                        <td class="fee-col"><input type="text" name="Amt" placeholder="$" pattern="^[0-9]+(\.[0-9]+)?$"
+                                oninput="validateNumber(this)" class="custom-radio"></td>
+                        <td class="fee-col"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="income-color">
+                            <b>Utilities</b><br>
+                            <b>(electricity, water)</b>
+                        </td>
+                        <td class="fee-col"><input type="text" name="Amt" placeholder="$" pattern="^[0-9]+(\.[0-9]+)?$"
+                                oninput="validateNumber(this)" class="custom-radio"></td>
+                        <td class="fee-col"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="income-color"><b>Stationeries</b></td>
+                        <td class="fee-col"><input type="text" name="Amt" placeholder="$" pattern="^[0-9]+(\.[0-9]+)?$"
+                                oninput="validateNumber(this)" class="custom-radio"></td>
+                        <td class="fee-col"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="income-color"><b>Drinks</b></td>
+                        <td class="fee-col"><input type="text" name="Amt" placeholder="$" pattern="^[0-9]+(\.[0-9]+)?$"
+                                oninput="validateNumber(this)" class="custom-radio"></td>
+                        <td class="fee-col"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="income-color"><b>Others</b></td>
+                        <td class="fee-col"><input type="text" name="Amt" placeholder="$" pattern="^[0-9]+(\.[0-9]+)?$"
+                                oninput="validateNumber(this)" class="custom-radio"></td>
+                        <td class="fee-col"><textarea></textarea></td>
+                    </tr>
+
+
+        </fieldset>
+
+        </table>
+
+
+        </table>
+
+    </form>
+    
+
+
+
+
+</body>
+
+
+
+</html>
